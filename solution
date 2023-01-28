@@ -1,0 +1,28 @@
+# Reto #4
+# ÁREA DE UN POLÍGONO
+# Fecha publicación enunciado: 24/01/22
+# Fecha publicación resolución: 31/01/22
+# Dificultad: FÁCIL
+#
+# Enunciado: Crea UNA ÚNICA FUNCIÓN (importante que sólo sea una) que sea capaz de calcular y   retornar el área de un polígono.
+# - La función recibirá por parámetro sólo UN polígono a la vez.
+# - Los polígonos soportados serán Triángulo, Cuadrado y Rectángulo.
+# - Imprime el cálculo del área de un polígono de cada tipo.
+
+
+
+base = int(input("ingrese a cuanto equivale la base:"))
+
+altura = int(input("ingrese cuanto mide la altura:"))
+
+lados = int(input("ingrese la cantidad de lados:"))
+
+area = 0
+
+if(lados == 4) :
+    print("el area equivale a {}" .format( base * altura) )
+elif(lados == 3) :
+   area = (base * altura) // 2
+   print("el area equivale a {}" .format(area))
+else :
+    print("error en el sistema")
